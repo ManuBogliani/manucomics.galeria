@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* Layout principal */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #F5EFE6;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Navegación */
+.nav-menu-horizontal {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-horizontal li a {
+    text-decoration: none;
+    color: #B82E25;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Tipografía estilo cómic para menú y títulos */
+.nav-menu-horizontal li a,
+h2 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+/* Main / Banner */
+main {
+    background-color: #B82E25;
+}
+
+.banner-img {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+
+/* Párrafos y cuadros de texto */
+p {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #F5EFE6;
+    color: #000000;
+    padding: 18px 28px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    margin: 30px auto;
+    max-width: 1500px;
+    box-sizing: border-box;
+}
+
+/* Populares de la semana */
+.populares-semana {
+    background-color: transparent;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.populares-semana h2 {
+    color: #F5EFE6;
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.populares-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.populares-item {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 18px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: box-shadow 0.2s;
+}
+
+.populares-item img {
+    max-width: 170px;
+    max-height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.pop-desc {
+    margin: 15px 0 10px 0;
+    font-size: 1.1em;
+    color: #B82E25;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pop-btn {
+    background-color: #B82E25;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pop-btn:hover {
+    background-color: #a51f1a;
+}
+
+/* Imágenes de locales */
+.local-img {
+    display: block;
+    width: 600px;
+    height: auto;
+    margin: 18px auto;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+/* Footer */
+footer {
+    background-color: #F5EFE6;
+    color: #B82E25;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+/* Promociones */
+.promo-panel {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.promo-panel h2 {
+    font-family: 'Bangers', cursive;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+/* Etiqueta "Elegí la promo" con estilo h2 */
+.promo-controls {
+    margin: 18px auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.promo-controls label {
+    font-family: 'Bangers', cursive;
+    color: #fff;
+    background: rgba(0,0,0,0.06);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    letter-spacing: 0.6px;
+}
+
+/* Select */
+.promo-select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    min-width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    background: #fff;
+    color: #B82E25;
+}
+
+/* Detalles de la promo */
+.promo-details {
+    margin-top: 22px;
+    background: rgba(245,239,230,0.95);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #111;
+}
+
+.promo-details h3 {
+    font-family: 'Bangers', cursive;
+    color: #B82E25;
+    margin-bottom: 6px;
+}
+
+.promo-desc {
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* Lista de productos dentro de promociones */
+.products-list {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.product-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.prod-name {
+    display: block;
+    color: #B82E25;
+}
+
+.prod-price {
+    display: block;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.qty-input {
+    width: 68px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.calc-btn {
+    background-color: #B82E25;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.calc-result {
+    display: inline-block;
+    vertical-align: middle;
+    color: #111;
+    font-weight: 600;
+}
+
+.small-muted {
+    color: #666;
+}
+
+/* Responsive: agrupar reglas para evitar duplicados */
+@media (max-width: 900px) {
+    /* Header / nav */
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .nav-menu-horizontal {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+    .logo {
+        width: 120px;
+    }
+
+    /* Banner */
+    .banner-img {
+        width: 100%;
+        max-width: 100vw;
+        height: auto;
+    }
+
+    /* Populares */
+    .populares-grid {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+    .populares-item {
+        width: 90vw;
+        max-width: 350px;
+    }
+
+    /* Texto principal */
+    p {
+        max-width: 95vw;
+        font-size: 1em;
+        padding: 12px 8px;
+    }
+
+    /* Local images */
+    .local-img {
+        width: 95vw;
+        max-width: 350px;
+    }
+
+    /* Promociones: lista vertical */
+    .products-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-item {
+        width: 90vw;
+        max-width: 380px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.95em;
+        padding: 10px 5px;
+    }
+}
+
+/* Ajuste responsive para pantallas pequeñas */
+@media (max-width: 560px) {
+    .promo-controls label {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+    .promo-select {
+        min-width: 180px;
+    }
+    .nav-menu-horizontal li a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManuComics - Manuel Bogliani 2025</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header class="header-flex">
+            <img src="/logoMC.png" alt="imagen_logo" class="logo">
+            <nav>
+                <ul class="nav-menu-horizontal">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/comics.html">Comics</a></li>
+                    <li><a href="/figuras.html">Figuras/Merchandising</a></li>
+                    <li><a href="/promociones.html">Promociones</a></li>
+                    <li><a href="/historia.html">Historia</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <img src="https://www.komar.de/media/catalog/category/komar_fototapeten_header_Comic.jpg" alt="Banner Manu Comics" class="banner-img">
+
+        <section class="promo-panel">
+            <h2>Promociones Vigentes</h2>
+
+            <div class="promo-controls">
+                <label for="promo-select">Elegí la promo que querés consultar:</label>
+                <select id="promo-select" class="promo-select" aria-label="Seleccionar promoción">
+                    <option value="">-- Seleccioná una promoción --</option>
+                    <option value="dos50">Llevá 2 productos y obtené 50% OFF en el segundo</option>
+                    <option value="3x2">3x2 en Productos de Merchandising</option>
+                    <option value="10off">10% OFF en Compras superiores a $30.000</option>
+                </select>
+            </div>
+
+            <div id="promo-details" class="promo-details" aria-live="polite" hidden>
+                <h3 id="promo-title"></h3>
+                <p id="promo-desc" class="promo-desc"></p>
+
+                <div id="products-list" class="products-list">
+                    <!-- JS renderiza los productos aquí -->
+                </div>
+
+                <div class="promo-actions">
+                    <button id="calcular-btn" class="calc-btn">Calcular ejemplo</button>
+                    <div id="calc-result" class="calc-result" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer>
+            © 2025 Manuel Bogliani - Todos los derechos reservados
+        </footer>
+        <script src="promociones.js"></script>
+    </body>
+</html>
